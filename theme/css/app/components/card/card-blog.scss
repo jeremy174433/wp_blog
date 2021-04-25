@@ -1,0 +1,41 @@
+/* ----- CARD ITEM BLOG ----- */
+.card-item {
+	
+	$imgSize: 225px;
+
+    &-header {
+		max-width: 100%;
+		min-width: 100%;
+		min-height: $imgSize;
+		max-height: $imgSize;
+		background-color: $light-grey;
+        border: 1px solid $theme-terthiary;
+        border-radius: .5rem;
+        &:hover img, &:focus img { transform: scale(1.1); }
+
+        img {
+            max-width: 100%;
+            min-width: 100%;
+            min-height: $imgSize;
+            max-height: $imgSize;
+            transition: .4s ease-in-out;
+        }
+    }
+
+    &-body {
+        a { color: $primary; }
+    }
+
+    &-footer {
+        @include fz-14;
+        a { color: $primary; }
+    }
+
+    /* ----- PURPOSE OTHERS ARTICLES ----- */
+    &.card-more {
+        margin-bottom: 3rem;
+        @include min-lg-rwd { &:nth-last-child(2) { margin-bottom: 0; } }
+        &:last-child { margin-bottom: 0 !important; }
+    }
+
+}

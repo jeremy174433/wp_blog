@@ -1,0 +1,56 @@
+// ---------- SCHEMA FORM GET EMAIL (newsletter) ---------- //
+/*
+<div class="col-12 col-md-8 col-lg-12 px-0 mx-auto">
+
+    <p class="fz-24">Ne manquez pas nos prochains articles</p>
+    <p class="pt-3 pb-2">Recevez des astuces et conseils pour décoller en SEO, Brand content, Content marketing...</p>
+    <p class="fz-14">(pas plus de 1 fois /mois c'est promis !)</p>
+
+    <div class="d-flex flex-column flex-sm-row flex-lg-column mb-3">
+        <input type="email" class="sib-email-area input-primary" name="email" placeholder="Votre adresse email..." value="" required="required">
+        <input type="submit" name="submit" value="S'abonner" class="py-2 px-4 ml-0 ml-sm-4 ml-lg-0 mt-3 mt-sm-0 mt-lg-3 pmy-btn pmy-btn-full pmy-btn-input-sizing rounded fw-600 fz-18">
+    </div>
+
+    <div class="ckeckbox-primary-wrapper position-relative">
+        <input type="checkbox" class="checkbox-primary" name="checkNewsletter" id="checkNewsletter" required="required">
+        <label for="checkNewsletter" class="cursor-pointer">J'ai lu et j'accepte les <a href="https://www.askingfranklin.com/conditions-generales-d-utilisation" target="_blank" rel="noopener" title="Ouvrir dans un nouvel onglet : CGU Asking Franklin">CGU</a>
+            <em class="fz-14">(requis)</em>
+            <span class="checkbox-primary-checked-circle"></span>
+        </label>
+    </div>
+*/
+
+// ---------- FORM STYLE OVERRIDE ---------- //
+.sib_signup_form {
+
+    .ckeckbox-primary-wrapper {
+        input { @include checkbox-state; }
+    }
+
+    .sib-alert-message-warning {
+        color: $danger !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        margin-bottom: .5rem !important;
+        border: none !important;
+        font-size: $fz-14;
+        line-height: 1;
+    }
+    
+    .sib-alert-message-success {
+        color: $success !important;
+        background-color: transparent !important;
+        padding: 0 !important;
+        margin-bottom: .5rem !important;
+        border: none !important;
+        font-size: $fz-14;
+        line-height: 1;
+            // override message disparition after 1 sec
+            display: block !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            height: fit-content !important;
+            width: fit-content !important;
+    }
+
+}

@@ -1,0 +1,58 @@
+::selection {
+    background-color: $primary;
+    color: $theme-secondary;
+}
+
+html { scroll-behavior: smooth; }
+
+body { 
+	font-family: $ff-primary, 'Calibri', 'Arial', sans-serif;
+    color: $theme-color-primary;
+    background-color: $theme-primary;
+    overflow-x: hidden;
+    @include fz-16;
+}
+
+a { @include link-style; }
+a object { pointer-events: none; }
+
+hr { border-color: $theme-terthiary; }
+
+button { 
+    background-color: transparent;
+    padding: 0;
+    border: none;
+}
+
+// Typography
+.fz-12 { @include fz-12; }
+.fz-14 { @include fz-14; }
+.fz-16 { @include fz-16; }
+.fz-18 { @include fz-18; }
+.fz-20 { @include fz-20; }
+.fz-22 { @include fz-22; }
+.fz-24 { @include fz-24; }
+.fz-26 { @include fz-26; }
+.fz-32 { @include fz-32; }
+.fz-36 { @include fz-36; }
+.fz-48 { @include fz-48; }
+.fw-400 { @include fw-400; }
+.fw-600 { @include fw-600; }
+
+// Colors
+.color-primary { color: $primary; }
+.color-dark { color: $theme-color-primary; }
+.color-light { color: $theme-color-secondary !important; }
+
+// Background
+.bgc-primary { background-color: $primary; }
+.bgc-dark { background-color: $theme-color-primary; }
+.bgc-light { background-color: $theme-color-secondary; }
+
+// Utilities
+.border-full { @include border-full; }
+
+.cursor-pointer { cursor: pointer; }
+
+.w-fit-content { width: fit-content; }
+.mw-fit-content { max-width: fit-content; }

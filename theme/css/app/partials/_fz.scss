@@ -1,0 +1,61 @@
+// ---------- FONT SIZE ---------- //
+
+$fz-12: 12px;
+$fz-14: 14px;
+$fz-16: 16px;
+$fz-18: 18px;
+$fz-20: 20px;
+$fz-22: 22px;
+$fz-24: 24px;
+$fz-26: 26px;
+$fz-32: 32px;
+$fz-36: 36px;
+$fz-48: 48px;
+
+// Line-height
+$lh-default: 6px;
+
+@mixin fz-12 {
+    font-size: $fz-12;
+    line-height: calc(#{$fz-12} + #{$lh-default});
+}
+@mixin fz-14 {
+    font-size: $fz-14;
+    line-height: calc(#{$fz-14} + #{$lh-default});
+}
+@mixin fz-16 {
+    font-size: $fz-16;
+    line-height: calc(#{$fz-16} + #{$lh-default});
+}
+@mixin fz-18 {
+    font-size: $fz-18;
+    line-height: calc(#{$fz-18} + #{$lh-default});
+}
+@mixin fz-20 {
+    font-size: $fz-20;
+    line-height: calc(#{$fz-20} + #{$lh-default});
+}
+@mixin fz-22 {
+    font-size: $fz-22 !important;
+    line-height: calc(#{$fz-22} + #{$lh-default}) !important;
+}
+@mixin fz-24 {
+    font-size: $fz-24;
+    line-height: calc(#{$fz-24} + #{$lh-default});
+}
+@mixin fz-26 {
+    font-size: $fz-26 !important;
+    line-height: calc(#{$fz-26} + #{$lh-default}) !important;
+}
+@mixin fz-32 {
+    font-size: $fz-32;
+    line-height: calc(#{$fz-32} + #{$lh-default});
+}
+@mixin fz-36 {
+    font-size: $fz-36;
+    line-height: calc(#{$fz-36} + #{$lh-default});
+}
+@mixin fz-48 {
+    font-size: $fz-48;
+    line-height: calc(#{$fz-48} + #{$lh-default});
+}

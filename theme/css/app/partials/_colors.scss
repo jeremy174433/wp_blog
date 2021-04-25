@@ -1,0 +1,47 @@
+// ---------- PRIMARY ---------- // 
+$primary: #673AB7;
+$primary-90: rgba($primary, .9);
+$primary-75: rgba($primary, .75);
+$primary-25: rgba($primary, .25);
+$primary-10: rgba($primary, .1);
+
+// ---------- SECONDARY ---------- //
+$secondary: #E94969;
+
+// ---------- HTML OVERRIDE ---------- //
+$link: #4285F4;
+
+// ---------- BLACK & WHITE ---------- //
+
+// black
+$black: #000;
+$black-25: rgba($black, .25);
+
+// white
+$white: #FFF;
+$white-90: rgba($white, .9);
+$white-50: rgba($white, .5);
+
+// ---------- GREY ---------- //
+$md-grey: #D3DDEF;
+$md-grey-75: rgba($md-grey, .75);
+$md-grey-35: rgba($md-grey, .35);
+$light-grey: #F8F9FA;
+// grey disabled
+$text-disabled: #9A9A9A;
+
+// ---------- ALERT ---------- //
+$success: #00C851;
+$danger: #FF4444;
+
+// ---------- SITE PRIMARY THEME ---------- //
+$theme-primary: #FCFCFC;
+$theme-secondary: $white;
+$theme-terthiary: #E3E4F1;
+$theme-color-primary: #2B2B2B;
+$theme-color-secondary: $white;
+
+// ---------- SOCIAL MEDIA ---------- //
+$twitter: #00ACEE;
+$facebook: #3B5998;
+$linkedin: #0073B1;

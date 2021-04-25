@@ -1,0 +1,16 @@
+footer {
+    color: $theme-color-secondary;
+
+    .container > div:not(:last-child) { border-bottom: 1px solid $white-50; }
+
+    .logo-link { max-width: fit-content; }
+
+    .social-media-wrapper {
+        li {
+            &:not(:last-child) { margin-right: 1.5rem !important; }
+
+            a { @include block-wrapper-hover }
+        }
+    }
+
+}

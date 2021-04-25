@@ -1,0 +1,26 @@
+@import './partials/var';
+@import './partials/colors';
+@import './partials/fz';
+@import './partials/breakpoints';
+@import './partials/media';
+@import './partials/mixins';
+
+@import './global/reset';
+@import './global/global';
+@import './global/layout';
+
+@import './components/card/card-blog';
+@import './components/buttons/pmy-btn';
+@import './components/buttons/back-to-top';
+@import './components/elements/tag';
+@import './components/elements/scrolling-progress-indicator';
+@import './components/elements/banner-article';
+@import './components/form/input';
+@import './components/form/checkbox';
+@import './components/form/sendinblue-form-override';
+
+@import './layout/navbar';
+@import './layout/footer';
+
+@import './pages/blog';
+@import './pages/single';

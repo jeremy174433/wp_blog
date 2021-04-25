@@ -1,0 +1,21 @@
+// ---------- BLOG PAGE ---------- //
+#categories-link {
+	top: $header-mh;
+	border-bottom: 1px solid $theme-terthiary;
+	z-index: 99;
+
+	ul {
+		max-width: $container-w;
+		padding: .5rem 0 1.25rem 0;
+		overflow-y: hidden;
+		@include scroll-x(auto);
+	
+		> li {
+			margin: 1rem .5rem 0 0;
+			white-space: nowrap;
+	
+			&:first-child { @include max-xl-rwd { margin-left: 1rem; } }
+		}
+	}
+
+}

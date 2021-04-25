@@ -1,0 +1,23 @@
+.tag-category {
+    padding: .35rem 1rem;
+    background-color: transparent;
+    color: $theme-color-primary;
+    outline: none !important;
+    transition: .2s ease-in-out;
+    border: 1px solid $theme-terthiary;
+    border-radius: 1rem;
+
+    &:hover, &:focus { 
+        text-decoration: none;
+        border-color: transparent;
+        background-color: $md-grey-35;
+        color: inherit;
+    }
+
+    &-selected {
+        border-color: transparent;
+        background-color: $primary-25 !important;
+        color: $primary !important;
+        pointer-events: none;
+    }
+}

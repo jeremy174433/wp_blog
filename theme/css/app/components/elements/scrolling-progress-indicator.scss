@@ -1,0 +1,12 @@
+#scrollContainer {
+    background-color: $theme-terthiary;
+    top: $header-mh;
+    z-index: 99;
+
+    &Bar {
+        width: 0%;
+        max-width: 100%; // prevent overflow
+        height: 4px;
+        background-color: $secondary;
+    }
+}

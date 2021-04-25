@@ -1,0 +1,116 @@
+// Primary button base
+@mixin pmy-btn {
+    padding: .5rem 1.5rem;
+    background-color: transparent;
+    color: $primary;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: .25rem;
+    font-weight: 600;
+    @include fz-18;
+    outline: none !important;
+    transition: .2s ease-in-out;
+    
+    &:hover, &:focus { text-decoration: none !important; }
+    &[disabled] { cursor: not-allowed; }
+}
+
+// Primary button outline to light
+@mixin pmy-btn-outline-light {
+    border: 1px solid $primary;
+    color: $primary;
+
+    svg { fill: $primary; }
+
+    &:hover, &:active { 
+        background-color: $primary-25;
+        color: $primary;
+    }
+    &:focus { 
+        background-color: $primary-25;
+        color: $primary;
+        box-shadow: none !important;
+        outline: none;
+    }
+}
+
+// Primary button outline to full
+@mixin pmy-btn-outline-full {
+    border: 1px solid $primary;
+    color: $primary;
+
+    svg { fill: $primary; }
+
+    &:hover, &:active { 
+        background-color: $primary-90;
+        color: $theme-color-secondary;
+        box-shadow: 0 0 8px $black-25;
+
+        svg { fill: $theme-color-secondary; }
+    }
+}
+
+// Primary button full
+@mixin pmy-btn-full {
+    background-color: $primary;
+    color: $theme-color-secondary;
+    border: 1px solid $primary;
+
+    svg { fill: $theme-color-secondary; }
+
+    &:hover, &:active { 
+        background-color: $primary-90;
+        color: $theme-color-secondary;
+        box-shadow: 0 0 8px $black-25; 
+    }
+
+    &[disabled] { 
+        background-color: $primary-75; 
+        border-color: transparent; 
+        &:hover, &:active { box-shadow: none; }
+    }
+}
+
+// Light button full
+@mixin light-btn-full {
+    background-color: $white;
+    color: $primary;
+    border: 1px solid $primary;
+
+    svg { fill: $primary; }
+
+    &:hover, &:active { 
+        background-color: $white-90;
+        color: $primary;
+        box-shadow: 0 0 8px $black-25; 
+    }
+}
+
+// Primary button sizing
+@mixin pmy-btn-small {
+    padding: .25rem .5rem;
+    @include fz-16;
+    @include fw-400;
+}
+@mixin pmy-btn-big {
+    @include min-sm-rwd { padding: 1rem 3rem; };
+    @include max-sm-rwd { padding: 1rem 2rem; }
+}
+
+.pmy-btn {
+    @include pmy-btn;
+
+    &-small { @include pmy-btn-small; }
+    &-big { @include pmy-btn-big; }
+
+    &-outline-light { @include pmy-btn-outline-light; }
+    &-outline-full { @include pmy-btn-outline-full; }
+    &-full { @include pmy-btn-full; }
+	&-light { @include light-btn-full; }
+}
+
+// Define custom size
+.pmy-btn-input-sizing { height: $input-size; }

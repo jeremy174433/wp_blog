@@ -1,0 +1,25 @@
+#navbar {
+    height: $header-mh;
+    background-color: $white;
+    border-bottom: 1px solid $theme-terthiary;
+    z-index: 99;
+    min-width: 100%;
+    top: 0;
+    right: 0;
+    transition: .4s ease-in-out;
+
+    .logo-asking-franklin {
+        width: 200px;
+        transition: .4s ease-in-out;
+        @include max-sm-rwd { width: 150px; }
+    }
+
+    .nav-link {
+        @include fz-18;
+        @include menu-link-style;
+    }
+
+    .nav-btn-cta a { 
+        height: $header-mh;
+    }
+}
